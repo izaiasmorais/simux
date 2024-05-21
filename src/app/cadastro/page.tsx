@@ -6,16 +6,18 @@ import Link from "next/link";
 
 export default function Cadastro() {
 	return (
-		<main className="w-full min-h-screen grid grid-cols-2">
-			<div className="bg-[#5A45FC] w-full flex items-center justify-center">
+		<main className="w-full min-h-screen grid md:grid-cols-2">
+			<div className="bg-[#5A45FC] w-full items-center justify-center md:flex hidden">
 				<h1 className="text-6xl leading-tight text-white font-semibold">
 					Bem vindo <br /> ao Simux<span className="text-[#D2F801]">.</span>
 				</h1>
 			</div>
-			<div className="flex items-center justify-center">
-				<div>
+
+			<div className="flex items-center justify-center gap-2 px-4">
+				<div className="w-full mx-auto max-w-[400px]">
 					<h1 className="text-2xl font-semibold">Crie uma conta</h1>
-					<form action="" className="flex flex-col gap-4 w-[400px]">
+
+					<form action="" className="flex flex-col gap-4">
 						<div className="flex flex-col gap-4 mt-4">
 							<Label>Email</Label>
 
@@ -41,12 +43,14 @@ export default function Cadastro() {
 						</div>
 
 						<div className="flex flex-col w-full gap-2">
-							<Button
-								type="submit"
-								className="w-full bg-[#D2F801] hover:bg-[#D2F801]/80 text-black"
-							>
-								Confirmar
-							</Button>
+							<Link href="/">
+								<Button
+									type="submit"
+									className="w-full bg-[#D2F801] hover:bg-[#D2F801]/80 text-black"
+								>
+									Confirmar
+								</Button>
+							</Link>
 
 							<Link href="/entrar">
 								<Button
