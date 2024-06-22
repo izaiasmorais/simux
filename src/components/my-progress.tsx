@@ -2,10 +2,7 @@ import { Crown } from "lucide-react";
 
 export function MyProgress() {
 	return (
-		<div
-			className="bg-white text-black w-full max-w-[1200px]
-				mr-4 md:mx-auto shadow-sm rounded-lg p-6 gap-4 flex flex-col"
-		>
+		<div className="flex flex-col w-full bg-white text-black md:mx-auto shadow-sm rounded-lg p-6 gap-4">
 			<div className="w-full flex items-center gap-4">
 				<div className="bg-[#D2F801] rounded-md p-2">
 					<Crown className="text-black" />

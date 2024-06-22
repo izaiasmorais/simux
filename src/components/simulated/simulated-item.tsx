@@ -1,5 +1,5 @@
 import { EllipsisVertical } from "lucide-react";
-import { TableRow, TableCell } from "./ui/table";
+import { TableRow, TableCell } from "../ui/table";
 
 export function SimulatedItem() {
 	return (

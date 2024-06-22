@@ -7,18 +7,18 @@ import {
 	DialogTitle,
 	DialogTrigger,
 } from "@/components/ui/dialog";
-import { Button } from "./ui/button";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
-import { DatePicker } from "./date-picker";
+import { Button } from "../ui/button";
+import { Label } from "../ui/label";
+import { Input } from "../ui/input";
+import { DatePicker } from "../date-picker";
 import { DialogClose } from "@radix-ui/react-dialog";
 
-export function CreateEventModal() {
+export function CreateSimulatedModal() {
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
 				<Button className="py-6 px-4 flex items-center gap-2">
-					Criar Evento
+					Criar Simulado
 				</Button>
 			</DialogTrigger>
 			<DialogContent>
