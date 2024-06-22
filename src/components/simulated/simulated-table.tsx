@@ -1,34 +1,39 @@
 import {
 	Table,
 	TableBody,
-	TableCaption,
-	TableCell,
 	TableHead,
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
-import { EllipsisVertical } from "lucide-react";
 import { SimulatedItem } from "./simulated-item";
+import { CreateSimulatedModal } from "./create-simulated-modal";
 
 export function SimulatedTable() {
 	return (
-		<Table className="mt-4">
-			{/* <TableCaption>A list of your recent invoices.</TableCaption> */}
-			<TableHeader>
-				<TableRow>
-					<TableHead>Tipo</TableHead>
-					<TableHead>Questões</TableHead>
-					<TableHead>Data</TableHead>
-					<TableHead></TableHead>
-				</TableRow>
-			</TableHeader>
+		<div className="flex flex-col bg-white text-black shadow-sm rounded-lg p-6 gap-4">
+			<div className="w-full flex justify-between items-center">
+				<strong className="text-xl font-medium">Simulados</strong>
 
-			<TableBody>
-				<SimulatedItem />
-				<SimulatedItem />
-				<SimulatedItem />
-				<SimulatedItem />
-			</TableBody>
-		</Table>
+				<CreateSimulatedModal />
+			</div>
+
+			<Table className="mt-4">
+				<TableHeader>
+					<TableRow>
+						<TableHead>Tipo</TableHead>
+						<TableHead>Questões</TableHead>
+						<TableHead>Data</TableHead>
+						<TableHead></TableHead>
+					</TableRow>
+				</TableHeader>
+
+				<TableBody>
+					<SimulatedItem />
+					<SimulatedItem />
+					<SimulatedItem />
+					<SimulatedItem />
+				</TableBody>
+			</Table>
+		</div>
 	);
 }

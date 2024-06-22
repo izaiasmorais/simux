@@ -1,6 +1,6 @@
 import { Crown } from "lucide-react";
 
-export function MyProgress() {
+export function ProgressSummaryBox() {
 	return (
 		<div className="flex flex-col w-full bg-white text-black md:mx-auto shadow-sm rounded-lg p-6 gap-4">
 			<div className="w-full flex items-center gap-4">

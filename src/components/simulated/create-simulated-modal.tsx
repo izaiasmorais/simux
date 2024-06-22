@@ -17,8 +17,8 @@ export function CreateSimulatedModal() {
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
-				<Button className="py-6 px-4 flex items-center gap-2">
-					Criar Simulado
+				<Button className="bg-[#D2F801] hover:bg-[#D2F801]/80 text-black">
+					Adicionar Simulado
 				</Button>
 			</DialogTrigger>
 			<DialogContent>
